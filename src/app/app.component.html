@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row" *ngFor="let item of actors">
+    <span class="actorName"><strong>{{item.actor}}</strong></span>
+    <div class="div-table">
+        <div class="div-table-row">
+           <div  class="div-table-col"><strong>Character</strong></div>
+           <div  class="div-table-col"><strong>Movie</strong></div>
+        </div>
+       <div class="div-table-row" *ngFor="let role of item.roles">
+           <div class="div-table-col">{{role.name}}</div>
+           <div class="div-table-col">{{role.movie}}</div>
+       </div>
+    </div>
+    <br/>
+  </div>
+</div>
